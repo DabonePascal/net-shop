@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://127.0.0.1:8888/net-shop/';
 
 /*
 |--------------------------------------------------------------------------
@@ -488,7 +488,7 @@ $config['compress_output'] = FALSE;
 | helper' page of the user guide for information regarding date handling.
 |
 */
-$config['time_reference'] = 'local';
+$config['time_reference'] = date_default_timezone_set('UTC');
 
 /*
 |--------------------------------------------------------------------------
@@ -502,7 +502,7 @@ $config['time_reference'] = 'local';
 | Note: You need to have eval() enabled for this to work.
 |
 */
-$config['rewrite_short_tags'] = FALSE;
+$config['rewrite_short_tags'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
